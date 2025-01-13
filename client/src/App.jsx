@@ -5,14 +5,6 @@ import {Button, Container, TextField, Typography, Box, Stack} from "@mui/materia
 const App = () => {
 
   const socket = useMemo(() => io("http://localhost:3000/"), []);
-
-  // const [messages, setMessages] = useState([]);
-  // const [message, setMessage] = useState("");
-  // const [room, setRoom] = useState("");
-  // const [socketId, setSocketId] = useState("");
-  
-  // const [roomName, setRoomName] = useState("");
-
   
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
